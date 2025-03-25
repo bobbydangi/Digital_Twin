@@ -1,5 +1,5 @@
 # Digital_Twin
-# ## What I Learned
+#  What I Learned
 # - ✅ **Data Simulation**: Created realistic medical data with NumPy/Pandas  
 # - ✅ **Anomaly Detection**: Implemented Isolation Forest from scikit-learn  
 # - ✅ **Time-Series Visualization**: Made professional plots with Matplotlib  
