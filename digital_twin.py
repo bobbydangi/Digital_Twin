@@ -14,14 +14,12 @@ Original file is located at
 
 
 # %% [markdown]
-# ## 1. Setup & Installations
 # Install required libraries
 
 # %%
 !pip install pandas numpy scikit-learn matplotlib --quiet
 
 # %% [markdown]
-# ## 2. Data Simulation
 # Generate realistic patient vital signs data
 
 # %%
@@ -55,7 +53,6 @@ df = simulate_patient_data(48)
 df.head()
 
 # %% [markdown]
-# ## 3. Anomaly Detection
 # Use Isolation Forest to detect abnormal readings
 
 # %%
@@ -73,7 +70,6 @@ print(f"Detected {df['is_anomaly'].sum()} anomalies:")
 df[df['is_anomaly'] == 1].head()
 
 # %% [markdown]
-# ## 4. Visualization
 # Create interactive plots of vital signs with anomalies highlighted
 
 # %%
@@ -109,10 +105,6 @@ plt.tight_layout()
 plt.savefig('vital_signs_plot.png', dpi=300, bbox_inches='tight')
 plt.show()
 
-# %% [markdown]
-# ## 5. Export Results
-# Save data and plots for GitHub
-
 # %%
 from google.colab import files
 
@@ -126,25 +118,3 @@ df.to_csv('patient_vitals.csv', index=False)
 
 # Download files
 files.download('digital_twin_project.zip')
-
-# %% [markdown]
-# ## 6. GitHub Integration
-# **Follow these steps to upload to GitHub:**
-# 1. Create new repository at https://github.com/new
-# 2. Name it "digital-twin-health"
-# 3. Upload these files from the ZIP archive:
-#    - `patient_vitals.csv`
-#    - `vital_signs_plot.png`
-# 4. Add this notebook file (`File > Download .ipynb`)
-# 5. Create README.md with project description
-
-# %% [markdown]
-# ## What I Learned
-# - ✅ **Data Simulation**: Created realistic medical data with NumPy/Pandas
-# - ✅ **Anomaly Detection**: Implemented Isolation Forest from scikit-learn
-# - ✅ **Time-Series Visualization**: Made professional plots with Matplotlib
-# - ✅ **GitHub Integration**: Prepared project for portfolio presentation
-
-# %% [markdown]
-# **Next Steps**
-# [Add your future improvement ideas here]
